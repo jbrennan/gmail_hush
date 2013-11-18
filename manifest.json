@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Gmail Hush",
+  "description": "Hushes some things in Gmail.",
+  "version": "1.0",
+  
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["hush.js"],
+      "all_frames": true
+    }
+  ]
+  
+  
+}
